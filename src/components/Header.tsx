@@ -5,35 +5,35 @@ import { useState } from "react";
 const navItems = [
   {
     title: "HOME",
-    href: "#",
+    href: "#home",
   },
   {
     title: "ABOUT",
-    href: "#",
+    href: "#about",
   },
   {
     title: "SKILLS",
-    href: "#",
+    href: "#skills",
   },
   {
     title: "PROJECTS",
-    href: "#",
+    href: "#projects",
   },
   {
     title: "CONTACT",
-    href: "#",
+    href: "#contact",
   },
 ];
 
-export default function Header() {
+export const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="h-auto md:h-16 border-b-2 border-primary flex flex-row justify-between">
+    <header className="h-auto w-full md:h-16 border-b-2 border-primary flex flex-row justify-between fixed bg-background z-10">
       <span className="absolute top-3 md:top-5 left-8 md:left-5 z-10">DF</span>
 
-      <div className="w-full h-auto md:h-16 pl-4 md:pl-16 pr-4 md:pr-16">
-        <div className="w-full h-full border-primary border-l-2 border-r-2">
+      <div className="w-full h-auto md:h-16 px-4 md:px-16">
+        <div className="w-full h-full border-primary border-x-2">
           {/* default navbar */}
           <nav className="hidden md:flex w-full h-full items-center gap-8 pr-8 justify-end text-xl font-medium">
             {navItems.map((item) => (
@@ -85,4 +85,4 @@ export default function Header() {
       </div>
     </header>
   );
-}
+};
