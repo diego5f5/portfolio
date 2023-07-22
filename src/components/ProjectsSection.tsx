@@ -17,8 +17,8 @@ const InitConection = () => {
 
 export const ProjectsSection = () => {
   return (
-    <section id="projects" className="max-w-5xl mx-auto">
-      <div className="min-h-screen flex flex-col justify-center">
+    <section id="projects" className="max-w-5xl mx-auto pt-20 md:pt-24">
+      <div className="flex flex-col justify-center">
         <SectionTitle title="PROJECTS" />
 
         <div className="bg-white w-full p-8 rounded-3xl flex items-center flex-col">

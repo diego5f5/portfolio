@@ -14,7 +14,7 @@ export default function Home() {
       <Header />
 
       <div className="w-full h-full px-4 md:px-16">
-        <div className="w-full h-full border-primary border-x-2">
+        <div className="w-full h-full border-primary border-x-2 px-2">
           <HomeSection />
 
           <AboutSection />

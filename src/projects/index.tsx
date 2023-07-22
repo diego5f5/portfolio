@@ -54,7 +54,7 @@ export const projects: IProject[] = [
     projectInfo: <></>,
   },
   {
-    title: "This Portfolio",
+    title: "Portfolio",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lacus mi. In bibendum sagittis urna. Aenean sit amet quam ac sapien bibendum luctus. Suspendisse laoreet urna at metus porta, pellentesque facilisis felis pulvinar. Vivamus vel mauris sed mauris commodo mollis. Nunc in porta mi. Nulla cursus molestie laoreet.",
     mainTechs: ["Next", "React", "Typescript", "Tailwind"],

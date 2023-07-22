@@ -3,8 +3,8 @@ import { SectionTitle } from "./SectionTitle";
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="max-w-5xl mx-auto">
-      <div className="min-h-screen flex flex-col justify-center">
+    <section id="about" className="max-w-5xl mx-auto pt-20 md:pt-24">
+      <div className="flex flex-col justify-center">
         <SectionTitle title="ABOUT" />
 
         <article className="bg-white w-full p-8 rounded-3xl">

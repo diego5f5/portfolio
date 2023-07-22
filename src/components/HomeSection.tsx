@@ -5,29 +5,29 @@ import { AnchorButton } from "./AnchorButton";
 export const HomeSection = () => {
   return (
     <section id="home" className="max-w-5xl mx-auto">
-      <div className="flex justify-between items-center min-h-screen flex-wrap md:flex-nowrap">
+      <div className="flex md:justify-between flex-col md:flex-row items-center min-h-screen flex-wrap md:flex-nowrap pt-20 md:pt-0">
         <Image
           width={300}
           height={300}
           src="/images/profile.png"
           alt="Diego"
-          className="rounded-full drop-shadow-lg"
+          className="rounded-full drop-shadow-lg w-[200px] md:w-[300px] h-[200px] md:h-[300px]"
           priority
         />
 
-        <div className="flex flex-col ml-12 gap-6">
+        <div className="flex flex-col md:ml-12 gap-4 md:gap-6 text-center md:text-start mt-4 md:mt-0">
           <h2 className="text-2xl">Hello, I'm</h2>
 
           <h1 className="text-5xl">
             <span className="text-primary">DIEGO</span> FERREIRA
           </h1>
 
-          <h2 className="text-2xl">
+          <h2 className="text-2xl px-2 md:px-0">
             A <span className="text-primary">Frontend Developer</span> who
             creates web and mobile solutions for real-world challenges.
           </h2>
 
-          <div className="flex flex-row gap-6">
+          <div className="flex flex-col md:flex-row items-center justify-center md:justify-normal gap-4 md:gap-6 flex-wrap px-4 md:px-0">
             <AnchorButton label="Projects" href="#projects" />
             <AnchorButton
               label="Resume"

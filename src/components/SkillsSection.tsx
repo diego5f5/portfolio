@@ -39,8 +39,8 @@ const skills = [
 
 export const SkillsSection = () => {
   return (
-    <section id="skills" className="max-w-5xl mx-auto">
-      <div className="min-h-screen flex flex-col justify-center">
+    <section id="skills" className="max-w-5xl mx-auto pt-20 md:pt-24">
+      <div className="flex flex-col justify-center">
         <SectionTitle title="SKILLS" />
 
         <div className="bg-white w-full p-8 rounded-3xl">
