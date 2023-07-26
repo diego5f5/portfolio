@@ -30,7 +30,12 @@ export const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="h-auto w-full md:h-16 border-b-2 border-primary flex flex-row justify-between fixed bg-background z-20">
+    <motion.header
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="h-auto w-full md:h-16 border-b-2 border-primary flex flex-row justify-between fixed bg-background z-20"
+    >
       <motion.span
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -50,7 +55,7 @@ export const Header = () => {
                 opacity: 1,
                 scale: 1,
                 transition: {
-                  delayChildren: 0,
+                  delayChildren: 0.5,
                   staggerChildren: 0.1,
                 },
               },
@@ -62,7 +67,7 @@ export const Header = () => {
             {navItems.map((item) => (
               <motion.a
                 variants={{
-                  hidden: { x: 20, opacity: 0 },
+                  hidden: { x: 30, opacity: 0 },
                   visible: {
                     x: 0,
                     opacity: 1,
@@ -118,6 +123,6 @@ export const Header = () => {
           </nav>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };

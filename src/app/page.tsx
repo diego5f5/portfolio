@@ -1,4 +1,8 @@
+"use client";
+
 /* eslint-disable react/no-unescaped-entities */
+import { motion } from "framer-motion";
+
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
@@ -13,7 +17,12 @@ export default function Home() {
     <main>
       <Header />
 
-      <div className="w-full h-full px-4 md:px-16">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="w-full h-full px-4 md:px-16"
+      >
         <div className="w-full h-full border-primary border-x-2 px-2">
           <HomeSection />
 
@@ -27,7 +36,7 @@ export default function Home() {
 
           <div id="modal-portal"></div>
         </div>
-      </div>
+      </motion.div>
 
       <Footer />
     </main>

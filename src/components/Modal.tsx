@@ -16,7 +16,7 @@ const effect = {
     transition: {
       type: "spring",
       stiffness: 600,
-      damping: 30,
+      damping: 40,
     },
   },
   exit: {

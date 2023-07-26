@@ -68,14 +68,7 @@ export const ProjectsSection = () => {
                   <SimpleConection />
                 )}
 
-                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: false }}
-                  transition={{ duration: 0.6 }}
-                >
-                  <ProjectCard {...project} />
-                </motion.div>
+                <ProjectCard {...project} />
               </React.Fragment>
             );
           })}

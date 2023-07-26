@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import Image from "next/image";
 
@@ -19,7 +20,13 @@ export const ProjectCard = ({
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="border-primary border-2 rounded-3xl p-4 flex flex-col items-center w-full">
+    <motion.div
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: false }}
+      transition={{ duration: 0.8, type: "spring", bounce: 0.5 }}
+      className="border-primary border-2 rounded-3xl p-4 flex flex-col items-center w-full bg-white"
+    >
       <p className="mb-5 text-xl font-semibold">{title}</p>
 
       <div className="flex flex-col lg:flex-row border-b border-b-[#EEEEEE] mb-4 pb-4 w-full">
@@ -46,6 +53,6 @@ export const ProjectCard = ({
       <Modal isOpen={isModalOpen} handleClose={() => setIsModalOpen(false)}>
         {projectInfo}
       </Modal>
-    </div>
+    </motion.div>
   );
 };
