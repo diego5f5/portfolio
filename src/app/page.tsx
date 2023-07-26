@@ -24,6 +24,8 @@ export default function Home() {
           <ProjectsSection />
 
           <ContactSection />
+
+          <div id="modal-portal"></div>
         </div>
       </div>
 

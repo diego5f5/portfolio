@@ -8,7 +8,7 @@ export const Footer = () => {
             <a
               target="_blank"
               href="https://github.com/diego5f5"
-              className="underline hover:font-semibold transition-all"
+              className="underline hover:font-semibold rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-primary"
             >
               Diego Ferreira
             </a>

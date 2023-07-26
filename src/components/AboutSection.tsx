@@ -1,10 +1,19 @@
+"use client";
+
 /* eslint-disable react/no-unescaped-entities */
 import { SectionTitle } from "./SectionTitle";
+import { motion } from "framer-motion";
 
 export const AboutSection = () => {
   return (
     <section id="about" className="max-w-5xl mx-auto pt-20 md:pt-24">
-      <div className="flex flex-col justify-center">
+      <motion.div
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: false }}
+        transition={{ duration: 0.6 }}
+        className="flex flex-col justify-center"
+      >
         <SectionTitle title="ABOUT" />
 
         <article className="bg-white w-full p-8 rounded-3xl">
@@ -24,7 +33,7 @@ export const AboutSection = () => {
             what drives me forward.
           </p>
         </article>
-      </div>
+      </motion.div>
     </section>
   );
 };

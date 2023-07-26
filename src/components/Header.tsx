@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const navItems = [
   {
@@ -29,26 +30,60 @@ export const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="h-auto w-full md:h-16 border-b-2 border-primary flex flex-row justify-between fixed bg-background z-10">
-      <span className="absolute top-3 md:top-5 left-8 md:left-5 z-10">DF</span>
+    <header className="h-auto w-full md:h-16 border-b-2 border-primary flex flex-row justify-between fixed bg-background z-20">
+      <motion.span
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ delay: 1 }}
+        className="absolute top-3 md:top-5 left-8 md:left-5 z-10"
+      >
+        DF
+      </motion.span>
 
-      <div className="w-full h-auto md:h-16 px-4 md:px-16">
-        <div className="w-full h-full border-primary border-x-2">
+      <div className="w-screen h-auto md:h-16 px-4 md:px-16">
+        <div className="w-full h-full border-primary border-x-2 z-20">
           {/* default navbar */}
-          <nav className="hidden md:flex w-full h-full items-center gap-8 pr-8 justify-end text-xl font-medium">
+          <motion.nav
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                scale: 1,
+                transition: {
+                  delayChildren: 0,
+                  staggerChildren: 0.1,
+                },
+              },
+            }}
+            initial={"hidden"}
+            animate={"visible"}
+            className="hidden md:flex w-full h-full items-center gap-8 pr-8 justify-end text-xl font-medium"
+          >
             {navItems.map((item) => (
-              <a
+              <motion.a
+                variants={{
+                  hidden: { x: 20, opacity: 0 },
+                  visible: {
+                    x: 0,
+                    opacity: 1,
+                  },
+                }}
                 key={`${item.title}-default`}
                 href={item.href}
-                className="duration-300 transition-colors hover:cursor-pointer hover:text-primary"
+                className="duration-300 transition-colors hover:cursor-pointer hover:text-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-primary"
               >
                 {item.title}
-              </a>
+              </motion.a>
             ))}
-          </nav>
+          </motion.nav>
 
           {/* mobile button */}
-          <div className="md:hidden flex items-center absolute top-3 md:top-5 right-8 md:right-5 z-10">
+          <motion.span
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            transition={{ delay: 1 }}
+            className="md:hidden flex items-center absolute top-3 md:top-5 right-8 md:right-5 z-10"
+          >
             <button onClick={() => setOpen((prev) => !prev)}>
               <svg
                 className=" w-6 h-6 hover:text-primary"
@@ -62,7 +97,7 @@ export const Header = () => {
                 <path d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
-          </div>
+          </motion.span>
 
           {/* mobile navbar */}
           <nav

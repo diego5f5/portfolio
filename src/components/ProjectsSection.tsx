@@ -1,17 +1,34 @@
+"use client";
+
 import { projects } from "@/projects";
 import { ProjectCard } from "./ProjectCard";
 import { SectionTitle } from "./SectionTitle";
 import React from "react";
+import { motion } from "framer-motion";
 
 const SimpleConection = () => {
-  return <div className="w-[2px] h-8 bg-primary" />;
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: false }}
+      transition={{ duration: 0.6 }}
+      className="w-[2px] h-8 bg-primary"
+    />
+  );
 };
 
 const InitConection = () => {
   return (
-    <div className="w-10 h-10 border-2 border-primary flex justify-center items-center rounded-full">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: false }}
+      transition={{ duration: 0.6 }}
+      className="w-10 h-10 border-2 border-primary bg-white flex justify-center items-center rounded-full z-10"
+    >
       <div className="w-6 h-6 bg-primary rounded-full" />
-    </div>
+    </motion.div>
   );
 };
 
@@ -22,6 +39,10 @@ export const ProjectsSection = () => {
         <SectionTitle title="PROJECTS" />
 
         <div className="bg-white w-full p-8 rounded-3xl flex items-center flex-col">
+          <p className="text-lg mb-4 self-start">
+            Real projects I have worked on during my career:
+          </p>
+
           <InitConection />
 
           {projects.map((project, index) => {
@@ -32,16 +53,29 @@ export const ProjectsSection = () => {
                 {lastYear !== project.year ? (
                   <>
                     <SimpleConection />
-                    <p className="text-xl font-semibold text-primary">
+                    <motion.p
+                      initial={{ opacity: 0, scale: 2 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: false }}
+                      transition={{ duration: 0.6 }}
+                      className="text-xl font-semibold text-primary"
+                    >
                       {project.year}
-                    </p>
+                    </motion.p>
                     <SimpleConection />
                   </>
                 ) : (
                   <SimpleConection />
                 )}
 
-                <ProjectCard {...project} />
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <ProjectCard {...project} />
+                </motion.div>
               </React.Fragment>
             );
           })}

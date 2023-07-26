@@ -1,12 +1,10 @@
-import { ReactElement } from "react";
-
 export interface IProject {
   title: string;
   description: string;
   mainTechs: string[];
   mainImage: string;
   year: number;
-  projectInfo: ReactElement;
+  projectInfo: string;
 }
 
 export const projects: IProject[] = [
@@ -29,7 +27,7 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/pizza-hut-app.png",
     year: 2023,
-    projectInfo: <></>,
+    projectInfo: "Project Info <here>",
   },
   {
     title: "Pizza Hut Brasil - Web",
@@ -51,16 +49,16 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/pizza-hut-app.png",
     year: 2023,
-    projectInfo: <></>,
+    projectInfo: "Project Info <here>",
   },
   {
     title: "Portfolio",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lacus mi. In bibendum sagittis urna. Aenean sit amet quam ac sapien bibendum luctus. Suspendisse laoreet urna at metus porta, pellentesque facilisis felis pulvinar. Vivamus vel mauris sed mauris commodo mollis. Nunc in porta mi. Nulla cursus molestie laoreet.",
-    mainTechs: ["Next", "React", "Typescript", "Tailwind"],
+    mainTechs: ["Next", "React", "Typescript", "Tailwind", "Framer Motion"],
     mainImage: "/images/pizza-hut-app.png",
     year: 2023,
-    projectInfo: <></>,
+    projectInfo: "Project Info <here>",
   },
   {
     title: "Crie Seus Posts",
@@ -76,7 +74,7 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/pizza-hut-app.png",
     year: 2022,
-    projectInfo: <></>,
+    projectInfo: "Project Info <here>",
   },
   {
     title: "Predikta - Dashboard(Thermal Manipulation)",
@@ -92,7 +90,7 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/pizza-hut-app.png",
     year: 2022,
-    projectInfo: <></>,
+    projectInfo: "Project Info <here>",
   },
   {
     title: "Predikta Pass",
@@ -109,7 +107,7 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/pizza-hut-app.png",
     year: 2021,
-    projectInfo: <></>,
+    projectInfo: "Project Info <here>",
   },
   {
     title: "QR Loc - Dashboard",
@@ -124,7 +122,7 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/pizza-hut-app.png",
     year: 2021,
-    projectInfo: <></>,
+    projectInfo: "Project Info <here>",
   },
   {
     title: "QR Loc - App",
@@ -133,7 +131,7 @@ export const projects: IProject[] = [
     mainTechs: ["React Native", "Javascript", "Axios", "Styled Components"],
     mainImage: "/images/pizza-hut-app.png",
     year: 2021,
-    projectInfo: <></>,
+    projectInfo: "Project Info <here>",
   },
   {
     title: "Planus",
@@ -142,7 +140,7 @@ export const projects: IProject[] = [
     mainTechs: ["React", "Javascript", "Axios", "Styled Components"],
     mainImage: "/images/pizza-hut-app.png",
     year: 2020,
-    projectInfo: <></>,
+    projectInfo: "Project Info <here>",
   },
   {
     title: "Betim Sem Dengue",
@@ -151,6 +149,6 @@ export const projects: IProject[] = [
     mainTechs: ["React Native", "Javascript"],
     mainImage: "/images/pizza-hut-app.png",
     year: 2019,
-    projectInfo: <></>,
+    projectInfo: "Project Info <here>",
   },
 ];
