@@ -1,8 +1,6 @@
 "use client";
-
 import { useState } from "react";
 import { motion } from "framer-motion";
-
 import Image from "next/image";
 
 import { IProject } from "@/projects";
@@ -15,7 +13,6 @@ export const ProjectCard = ({
   mainImage,
   mainTechs,
   projectInfo,
-  year,
 }: IProject) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -32,10 +29,11 @@ export const ProjectCard = ({
       <div className="flex flex-col lg:flex-row border-b border-b-[#EEEEEE] mb-4 pb-4 w-full">
         <Image
           src={mainImage}
-          width={362}
-          height={204}
-          alt=""
-          className="lg:mr-4 mb-4 lg:mb-0 lg:w-[362px] w-auto lg:h-[204px] max-h-[320px] object-contain"
+          width={0}
+          height={0}
+          sizes="100vw"
+          alt={title}
+          className="lg:mr-4 mb-4 lg:mb-0 lg:w-[362px] lg:min-w-[362px] w-auto lg:h-[204px] max-h-[320px] object-contain rounded-lg bg-gray-100"
         />
         <div className="flex flex-col justify-between items-start">
           <p>{description}</p>

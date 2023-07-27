@@ -1,8 +1,8 @@
-"use client";
-
 /* eslint-disable react/no-unescaped-entities */
-import { SectionTitle } from "./SectionTitle";
+"use client";
 import { motion } from "framer-motion";
+
+import { SectionTitle } from "./SectionTitle";
 
 export const AboutSection = () => {
   return (

@@ -1,6 +1,6 @@
 "use client";
-
 import { motion } from "framer-motion";
+
 import { SectionTitle } from "./SectionTitle";
 
 export const ContactSection = () => {

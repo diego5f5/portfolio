@@ -1,7 +1,7 @@
 "use client";
-
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const navItems = [
   {
@@ -40,9 +40,9 @@ export const Header = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ delay: 1 }}
-        className="absolute top-3 md:top-5 left-8 md:left-5 z-10"
+        className="absolute top-0 md:top-0 left-8 md:left-0 z-10 h-12 md:h-16 w-auto md:w-16 flex justify-center items-center"
       >
-        DF
+        <Image width={30} height={30} src="/icons/logo.svg" alt="logo" />
       </motion.span>
 
       <div className="w-screen h-auto md:h-16 px-4 md:px-16">

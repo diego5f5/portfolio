@@ -1,10 +1,10 @@
 "use client";
+import React from "react";
+import { motion } from "framer-motion";
 
 import { projects } from "@/projects";
 import { ProjectCard } from "./ProjectCard";
 import { SectionTitle } from "./SectionTitle";
-import React from "react";
-import { motion } from "framer-motion";
 
 const SimpleConection = () => {
   return (

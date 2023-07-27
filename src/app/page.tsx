@@ -1,18 +1,25 @@
-"use client";
-
 /* eslint-disable react/no-unescaped-entities */
+"use client";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
+import Hotjar from "@hotjar/browser";
 
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-
 import { HomeSection } from "@/components/HomeSection";
 import { AboutSection } from "@/components/AboutSection";
 import { SkillsSection } from "@/components/SkillsSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { ContactSection } from "@/components/ContactSection";
 
+const siteId = 3589833;
+const hotjarVersion = 6;
+
 export default function Home() {
+  useEffect(() => {
+    Hotjar.init(siteId, hotjarVersion);
+  }, []);
+
   return (
     <main>
       <Header />

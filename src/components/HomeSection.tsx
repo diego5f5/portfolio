@@ -1,24 +1,29 @@
-"use client";
 /* eslint-disable react/no-unescaped-entities */
+"use client";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 import { AnchorButton } from "./AnchorButton";
-import { motion } from "framer-motion";
 
 export const HomeSection = () => {
   return (
     <section id="home" className="max-w-5xl mx-auto">
       <div className="flex md:justify-between flex-col md:flex-row items-center min-h-screen flex-wrap md:flex-nowrap pt-20 md:pt-0">
-        <motion.img
+        <motion.div
           initial={{ opacity: 0, x: -300 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          width={300}
-          height={300}
-          src="/images/profile.png"
-          alt="Diego"
-          className="rounded-full drop-shadow-lg w-[200px] md:w-[300px] h-[200px] md:h-[300px]"
-          // priority
-        />
+          className="w-[200px] md:w-[300px] h-[200px] md:h-[300px] min-w-max min-h-max"
+        >
+          <Image
+            width={300}
+            height={300}
+            src="/images/profile.png"
+            alt="Diego"
+            className="rounded-full drop-shadow-lg w-full h-full"
+            priority
+          />
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, x: 300 }}
