@@ -40,7 +40,7 @@ export const ProjectsSection = () => {
 
         <div className="bg-white w-full p-8 rounded-3xl flex items-center flex-col">
           <p className="text-lg mb-4 self-start">
-            Real projects I have worked on during my career:
+            Some of the real projects I have worked on:
           </p>
 
           <InitConection />
