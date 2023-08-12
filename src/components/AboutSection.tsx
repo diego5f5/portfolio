@@ -18,19 +18,26 @@ export const AboutSection = () => {
 
         <article className="bg-white w-full p-8 rounded-3xl">
           <p className="text-lg">
-            [Provisory] With 4 years of experience in the technology market, I
-            specialize in creating innovative and scalable web and mobile
-            solutions as a frontend developer.
+            I am a person passionate about technology, and now, with over 4
+            years of experience in the software development field, I
+            increasingly realize that I am exactly where I want to be, working
+            with something that I love.
             <br />
             <br />
-            Throughout my career, I have worked with major brands and diverse
-            clients, developing great web and mobile apps. I am experienced in
-            utilizing agile methodologies and collaborating with
-            cross-functional teams to deliver projects on time.
+            During my Bachelor's degree in Information Systems, I came across
+            various career options within the IT world, but I immediately
+            identified with front-end development. Being able to combine
+            programming logic and visual structure in their various forms is
+            something that captivates me and gives me immense satisfaction.
             <br />
-            <br />I am passionate about technology and the impact it can have on
-            people's lives. Creating solutions that make a real difference is
-            what drives me forward.
+            <br />I am always open to learning new things and I am not afraid of
+            challenges. In fact, I prefer working with challenging tasks, and I
+            see this as a motivational factor during the execution of my work.
+            Over these years as a front-end developer, I have developed a skill
+            that I consider very important – effective communication with the
+            team. This way, I become a key player that connects design and
+            back-end, enabling me to address issues and obstacles before they
+            can arise in application development.
           </p>
         </article>
       </motion.div>
