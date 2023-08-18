@@ -24,7 +24,7 @@ export const ContactSection = () => {
           <p className="mt-8 font-semibold text-xl pb-1">Linkedin:</p>
           <div className="flex">
             <a
-              className="hover:underline rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-primary"
+              className="underline rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-primary"
               href="https://www.linkedin.com/in/diegoferreirati/"
               target="_blank"
             >

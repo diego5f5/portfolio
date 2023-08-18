@@ -30,12 +30,12 @@ const skills = [
     src: "/icons/react-native.svg",
   },
   {
-    name: "Next.Js",
-    src: "/icons/next.svg",
+    name: "Styled Components",
+    src: "/icons/styled-components.svg",
   },
   {
-    name: "Tailwind CSS",
-    src: "/icons/tailwind.svg",
+    name: "Jest",
+    src: "/icons/jest.svg",
   },
 ];
 

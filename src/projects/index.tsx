@@ -1,10 +1,11 @@
+import { ReactElement } from "react";
 export interface IProject {
   title: string;
   description: string;
   mainTechs: string[];
   mainImage: string;
   year: number;
-  projectInfo: string;
+  projectInfo: ReactElement;
 }
 
 export const projects: IProject[] = [
@@ -27,7 +28,7 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/pizza-hut-app.png",
     year: 2023,
-    projectInfo: "Project Info <here>",
+    projectInfo: <></>,
   },
   {
     title: "Pizza Hut Brasil - Web",
@@ -49,16 +50,7 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/pizza-hut-web.png",
     year: 2023,
-    projectInfo: "Project Info <here>",
-  },
-  {
-    title: "Portfolio",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lacus mi. In bibendum sagittis urna. Aenean sit amet quam ac sapien bibendum luctus. Suspendisse laoreet urna at metus porta, pellentesque facilisis felis pulvinar. Vivamus vel mauris sed mauris commodo mollis. Nunc in porta mi. Nulla cursus molestie laoreet.",
-    mainTechs: ["Next", "React", "Typescript", "Tailwind", "Framer Motion"],
-    mainImage: "/images/portfolio.png",
-    year: 2023,
-    projectInfo: "Project Info <here>",
+    projectInfo: <></>,
   },
   {
     title: "Crie Seus Posts",
@@ -74,7 +66,7 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/crie-seus-posts.png",
     year: 2022,
-    projectInfo: "Project Info <here>",
+    projectInfo: <></>,
   },
   {
     title: "Predikta - Dashboard(Thermal Manipulation)",
@@ -90,7 +82,7 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/thermal-manipulation.png",
     year: 2022,
-    projectInfo: "Project Info <here>",
+    projectInfo: <></>,
   },
   {
     title: "Predikta Pass",
@@ -107,7 +99,7 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/predikta-pass.png",
     year: 2021,
-    projectInfo: "Project Info <here>",
+    projectInfo: <></>,
   },
   {
     title: "QR Loc - Dashboard",
@@ -122,7 +114,7 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/qr-loc-dashboard.png",
     year: 2021,
-    projectInfo: "Project Info <here>",
+    projectInfo: <></>,
   },
   {
     title: "QR Loc - App",
@@ -131,7 +123,7 @@ export const projects: IProject[] = [
     mainTechs: ["React Native", "Javascript", "Axios", "Styled Components"],
     mainImage: "/images/qr-loc-app.png",
     year: 2021,
-    projectInfo: "Project Info <here>",
+    projectInfo: <></>,
   },
   {
     title: "Planus",
@@ -140,15 +132,35 @@ export const projects: IProject[] = [
     mainTechs: ["React", "Javascript", "Axios", "Styled Components"],
     mainImage: "/images/planus.png",
     year: 2020,
-    projectInfo: "Project Info <here>",
+    projectInfo: <></>,
   },
   {
     title: "Betim Sem Dengue",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lacus mi. In bibendum sagittis urna. Aenean sit amet quam ac sapien bibendum luctus. Suspendisse laoreet urna at metus porta, pellentesque facilisis felis pulvinar. Vivamus vel mauris sed mauris commodo mollis. Nunc in porta mi. Nulla cursus molestie laoreet.",
+      "The 'Betim Sem Dengue' app was one of my early React Native projects, originating from a collaboration between my workplace and the city I reside in. It aimed to enable residents to report dengue mosquito breeding sites, utilizing user location and images sent to a database for health agents' action. Developed within a tight timeline, the project broadened my React Native skills.",
     mainTechs: ["React Native", "Javascript"],
     mainImage: "/images/betim-sem-dengue.png",
     year: 2019,
-    projectInfo: "Project Info <here>",
+    projectInfo: (
+      <p>
+        {`The "Betim Sem Dengue" app marked one of my initial experiences with React Native projects at the outset of my career. It sprang from a collaboration between the company I worked for and my city of residence. The app's core concept revolved around providing city residents a tool to report potential breeding sites of the dengue mosquito. It entailed capturing the user's location and a photo of the suspected area, with this information funneling into a database for eventual use by health agents, responsible for countering these breeding sites. Additionally, the app aimed to highlight areas in the city with elevated dengue breeding occurrences. All this had to be developed within a tight timeframe, aligning with the peak season of dengue incidents.`}
+        <br />
+        <br />
+        {`The front-end team comprised myself and another seasoned React Native developer. Until then, my experience was primarily in React projects tailored for the web, making this a wholly novel encounter. During the project, I undertook tasks like crafting the layout and orchestrating the image capture flow via the camera.`}
+        <br />
+        <br />
+        {`A modestly scoped project, it was my inaugural venture in developing an app from scratch and releasing it on the app store. Despite this, we successfully met the deadline, yielding a positive impact on the city's residents by aiding the local government's dengue-fighting initiatives in Betim.`}
+        <p className="mt-4 text-xs">
+          {`In this link you can find the news article about when the app was made available to the public: `}
+          <a
+            target="_blank"
+            className="underline"
+            href="https://agendabetim.com.br/noticias/betim/2020/03/21/betim-ganha-aplicativo-para-ajudar-combater-a-dengue/117/"
+          >
+            https://agendabetim.com.br/noticias/betim/2020/03/21/betim-ganha-aplicativo-para-ajudar-combater-a-dengue/117/
+          </a>
+        </p>
+      </p>
+    ),
   },
 ];
