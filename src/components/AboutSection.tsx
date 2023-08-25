@@ -18,7 +18,7 @@ export const AboutSection = () => {
 
         <article className="bg-white w-full p-8 rounded-3xl">
           <p className="text-lg">
-            I'm a front-end developer from Brazil, driven by a passion for
+            I'm a Frontend Developer from Brazil, driven by a passion for
             crafting outstanding web and mobile applications. With a bachelor's
             degree in Information Systems and more than 4 years of experience in
             the IT industry.
