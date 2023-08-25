@@ -52,7 +52,7 @@ const ModalContent = ({
     aria-label={ariaLabel}
     className={`relative max-h-[80vh] overflow-y-auto mx-4 ${
       className ||
-      "p-5 bg-white rounded-lg shadow-lg focus:outline-none max-w-[600px]"
+      "p-5 bg-white rounded-lg shadow-lg focus:outline-none md:max-w-[600px] max-w-[90vw]"
     }`}
     variants={effect}
     initial="hidden"
