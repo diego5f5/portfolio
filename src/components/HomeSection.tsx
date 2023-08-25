@@ -13,14 +13,14 @@ export const HomeSection = () => {
           initial={{ opacity: 0, x: -300 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-[200px] md:w-[300px] h-[200px] md:h-[300px] min-w-max min-h-max"
+          className="w-[200px] md:w-[300px] h-[200px] md:h-[300px]"
         >
           <Image
             width={300}
             height={300}
             src="/images/profile.png"
             alt="Diego"
-            className="rounded-full drop-shadow-lg w-full h-full"
+            className="rounded-full drop-shadow-lg min-w-[200px] md:min-w-[300px] h-[200px] md:h-[300px]"
             priority
           />
         </motion.div>

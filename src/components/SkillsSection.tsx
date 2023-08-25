@@ -49,7 +49,7 @@ export const SkillsSection = () => {
             opacity: 1,
             scale: 1,
             transition: {
-              delayChildren: 0.4,
+              delayChildren: 0.2,
               staggerChildren: 0.1,
             },
           },
@@ -76,15 +76,16 @@ export const SkillsSection = () => {
                   },
                 }}
                 key={skill.name}
-                className="drop-shadow bg-white flex items-center justify-center flex-col p-4 rounded-lg"
               >
-                <Image
-                  width={80}
-                  height={80}
-                  src={skill.src}
-                  alt={skill.name}
-                />
-                <p className="mt-4 text-base">{skill.name}</p>
+                <div className="drop-shadow bg-white flex items-center justify-center flex-col p-4 rounded-lg">
+                  <Image
+                    width={80}
+                    height={80}
+                    src={skill.src}
+                    alt={skill.name}
+                  />
+                  <p className="mt-4 text-base">{skill.name}</p>
+                </div>
               </motion.div>
             ))}
           </div>
