@@ -54,10 +54,10 @@ export const ProjectsSection = () => {
                   <>
                     <SimpleConection />
                     <motion.p
-                      initial={{ scale: 1.8 }}
-                      whileInView={{ scale: 1 }}
+                      initial={{ opacity: 0, scale: 1.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
                       viewport={{ once: false }}
-                      transition={{ duration: 0.6, delay: 0.4 }}
+                      transition={{ duration: 0.6 }}
                       className="text-xl font-semibold text-primary"
                     >
                       {project.year}
