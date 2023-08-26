@@ -49,14 +49,14 @@ export const SkillsSection = () => {
             opacity: 1,
             scale: 1,
             transition: {
-              delayChildren: 0.2,
+              delayChildren: 0.8,
               staggerChildren: 0.1,
             },
           },
         }}
         initial={"hidden"}
         whileInView={"visible"}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 0.6 }}
         className="flex flex-col justify-center"
       >

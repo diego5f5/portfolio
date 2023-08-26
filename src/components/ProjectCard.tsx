@@ -23,7 +23,7 @@ export const ProjectCard = ({
     <motion.div
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       transition={{ duration: 0.8, type: "spring", bounce: 0.5 }}
       className="border-primary border-2 rounded-3xl p-4 flex flex-col items-center w-full bg-white"
     >

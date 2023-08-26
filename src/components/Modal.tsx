@@ -50,9 +50,8 @@ const ModalContent = ({
     role="dialog"
     aria-modal={true}
     aria-label={ariaLabel}
-    className={`relative max-h-[80vh] overflow-y-auto mx-4 ${
-      className ||
-      "p-5 bg-white rounded-lg shadow-lg focus:outline-none md:max-w-[600px] max-w-[90vw]"
+    className={`relative max-h-[80vh] md:max-w-[600px] max-w-[90vw] overflow-y-auto mx-4 ${
+      className || "p-5 bg-white rounded-lg shadow-lg focus:outline-none"
     }`}
     variants={effect}
     initial="hidden"

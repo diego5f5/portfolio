@@ -153,6 +153,7 @@ export const projects: IProject[] = [
         <p className="mt-4 text-xs">
           {`In this link you can find the news article about when the app was made available to the public: `}
           <a
+            tabIndex={-1}
             target="_blank"
             className="underline break-all"
             href="https://agendabetim.com.br/noticias/betim/2020/03/21/betim-ganha-aplicativo-para-ajudar-combater-a-dengue/117/"
