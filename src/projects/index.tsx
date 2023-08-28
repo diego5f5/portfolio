@@ -128,11 +128,32 @@ export const projects: IProject[] = [
   {
     title: "Planus",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lacus mi. In bibendum sagittis urna. Aenean sit amet quam ac sapien bibendum luctus. Suspendisse laoreet urna at metus porta, pellentesque facilisis felis pulvinar. Vivamus vel mauris sed mauris commodo mollis. Nunc in porta mi. Nulla cursus molestie laoreet.",
+      "Planus is a versatile time tracking platform. Users log hours for their projects, while admins access graphs and cost data. An internal project, I, along with colleagues, developed its frontend. My role encompassed idea contribution and logic creation for interactive reports. We later launched it company-wide, reducing costs tied to third-party tools and fostering internal maintenance.",
     mainTechs: ["React", "Javascript", "Axios", "Styled Components"],
     mainImage: "/images/planus.png",
     year: 2020,
-    projectInfo: <></>,
+    projectInfo: (
+      <p>
+        {`Planus is a time tracking platform with different levels of access. It allows users to log their hours for the projects they are associated with. Additionally, administrators and managers can generate graphs and spreadsheets related to the total project hours and associated costs. This was a project planned and executed internally by the company I worked for. It originally started as an internal solution but evolved into a product.`}
+        <br />
+        <br />
+        {`I worked as a frontend developer along with two colleagues of the same level. I had the opportunity to contribute to almost all features of the application, suggesting ideas and creating the logic responsible for generating some of the interactive reports directly on the frontend.`}
+        <br />
+        <br />
+        {`The project was adopted for internal use within the company to test it in a real-world environment and gather feedback for possible improvements and adjustments. Its usage also led to a reduction in costs associated with third-party software licenses, as there was now an internal, customizable solution maintained by the company's own team.`}
+        <p className="mt-4 text-xs">
+          {`You can access the application directly through this link: `}
+          <a
+            tabIndex={-1}
+            target="_blank"
+            className="underline break-all"
+            href="https://planus.io/"
+          >
+            https://planus.io/
+          </a>
+        </p>
+      </p>
+    ),
   },
   {
     title: "Betim Sem Dengue",
