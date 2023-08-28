@@ -119,11 +119,21 @@ export const projects: IProject[] = [
   {
     title: "QR Loc - App",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lacus mi. In bibendum sagittis urna. Aenean sit amet quam ac sapien bibendum luctus. Suspendisse laoreet urna at metus porta, pellentesque facilisis felis pulvinar. Vivamus vel mauris sed mauris commodo mollis. Nunc in porta mi. Nulla cursus molestie laoreet.",
+      "Scans QR codes on bracelets, updating a backend system. Developed exclusively for Android outside the official store. I had the opportunity to led the entire process, collaborating with a backend developer, designer, and project manager. Explored camera use, QR interpretation, backend integration, and offline storage.",
     mainTechs: ["React Native", "Javascript", "Axios", "Styled Components"],
     mainImage: "/images/qr-loc-app.png",
     year: 2021,
-    projectInfo: <></>,
+    projectInfo: (
+      <p>
+        {`The mobile application "QR Loc" was a solution created to be part of a set of applications that together formed a complete experience for mapping and monitoring inhabited areas that could be under some kind of risk, usually small villages located near mining dams. The main function of this app is to read QR codes located on bracelets, and after correctly reading a QR code, this information is communicated to a backend API that records the reading and updates the database.`}
+        <br />
+        <br />
+        {`These bracelets with QR codes were distributed to residents of these regions during evacuation simulations and would eventually also be distributed in real situations. The reading and mapping of these bracelets would take place at control points spread throughout the region, and the reading action would be performed by civil defense agents present there, using smartphones or totems with the installed app. This app was developed exclusively for the Android operating system and distributed outside the official store. Therefore, these mobile devices had the Android system and the application was installed using the generated .apk file.`}
+        <br />
+        <br />
+        {`I was the sole developer and responsible for building this app. Consequently, I was involved from the initial setup to the final distributed version. The team consisted of me, a backend developer, a designer, and a project manager. During development, I had the opportunity to work with interesting concepts such as camera manipulation, QR code interpretation, backend integrations, and offline storage for later use with internet access to perform synchronization.`}
+      </p>
+    ),
   },
   {
     title: "Planus",
