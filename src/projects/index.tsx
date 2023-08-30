@@ -87,7 +87,7 @@ export const projects: IProject[] = [
   {
     title: "Predikta Pass",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lacus mi. In bibendum sagittis urna. Aenean sit amet quam ac sapien bibendum luctus. Suspendisse laoreet urna at metus porta, pellentesque facilisis felis pulvinar. Vivamus vel mauris sed mauris commodo mollis. Nunc in porta mi. Nulla cursus molestie laoreet.",
+      "Predikta Pass app complements kiosk screenings. Users scan QR codes to check screening results, view valid passes, and locate nearby kiosks on a map. Built with AWS integration, login flows. Sole frontend/mobile developer using Expo. Collaborated with backend and designer, adhering to agile methods.",
     mainTechs: [
       "React Native",
       "Javascript",
@@ -99,12 +99,36 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/predikta-pass.png",
     year: 2021,
-    projectInfo: <></>,
+    projectInfo: (
+      <p>
+        {`The Predikta Pass application was created to complement the digital screening experience conducted at a kiosk equipped with thermal technology. The app functions as a pass for accessing locations and events safely. After undergoing screening at the kiosk, a QR code is generated. With their smartphone in hand, the user scans this QR code, which displays the result of their screening. Once the code is scanned, the app interprets the result, checks with the backend, and displays on the main screen of the app the current status of the user and whether they have a valid/approved pass.`}
+        <br />
+        <br />
+        {`In addition to the QR code interpretation functionality, the app also records and maintains a history of the passes and scans that have been generated. It's also possible to locate nearby kiosks on the map, represented by custom markers. The app features login, registration, and password recovery flows, integrating with AWS technologies like Cognito and Amplify.`}
+        <br />
+        <br />
+        {`I was the sole frontend/mobile developer for this project and responsible for creating it from the initial setup to its production release. I worked using technologies like Expo, which facilitated distribution for internal testing during the development phase, as well as building final versions. I was also responsible for configuring both the Google Play and Apple Store listings.`}
+        <br />
+        <br />
+        {`Throughout the development process, I collaborated closely with the backend developer, actively participating in defining contracts. I also worked closely with the designer, contributing to the layout ideation and adaptation, as well as giving presentations and frequently updating the board and card mapping, all utilizing agile methodologies.`}
+        <p className="mt-4 text-xs">
+          {`You can view the deployed application through this link: `}
+          <a
+            tabIndex={-1}
+            target="_blank"
+            className="underline break-all"
+            href="https://play.google.com/store/apps/details?id=com.predikta.prediktapass"
+          >
+            https://play.google.com/store/apps/details?id=com.predikta.prediktapass
+          </a>
+        </p>
+      </p>
+    ),
   },
   {
     title: "QR Loc - Dashboard",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lacus mi. In bibendum sagittis urna. Aenean sit amet quam ac sapien bibendum luctus. Suspendisse laoreet urna at metus porta, pellentesque facilisis felis pulvinar. Vivamus vel mauris sed mauris commodo mollis. Nunc in porta mi. Nulla cursus molestie laoreet.",
+      "QR Loc - Dashboard: Web app visualizes backend data with Google Maps integration. Markers display control and residence points, color-coded for evacuation status. Complements 'QR Loc - app' for monitoring high-risk areas. Explored map rendering with react and dynamic marker control.",
     mainTechs: [
       "React",
       "Javascript",
@@ -114,7 +138,17 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/qr-loc-dashboard.png",
     year: 2021,
-    projectInfo: <></>,
+    projectInfo: (
+      <p>
+        {`The project "QR Loc - Dashboard" is a web application created with the purpose of providing a simplified visualization of a database connected to a backend API, featuring a straightforward and intuitive interface that ensures users can keep track of updates. The main functionality of the application is its integration with Google Maps, which allows for rendering points on the map based on the received data. The markers on the map are divided into two categories: the first category consists of control points, which are also listed in the left corner of the screen in a grid format, and the second category includes residence points. These residence points can change color based on the number of people who have evacuated: red when no one has evacuated, yellow when at least one person has evacuated, and green when all residents of a house have evacuated.`}
+        <br />
+        <br />
+        {`This project complements the experience mentioned in the "QR Loc - app" project, where a QR code on a bracelet is scanned. Based on this scan, the dashboard will occasionally present updated data, assisting in monitoring the potential evacuation of a high-risk area.`}
+        <br />
+        <br />
+        {`In addition to having the opportunity to work on a project that directly impacts people's lives, I also gained valuable insights into handling map rendering on the web using React and dynamically controlling markers on a map through data integration with the backend.`}
+      </p>
+    ),
   },
   {
     title: "QR Loc - App",
