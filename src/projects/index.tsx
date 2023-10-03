@@ -25,6 +25,7 @@ export const projects: IProject[] = [
       "Axios",
       "Socket.io",
       "Formik",
+      "Salesforce SDK",
     ],
     mainImage: "/images/pizza-hut-app.png",
     year: 2023,
@@ -54,8 +55,7 @@ export const projects: IProject[] = [
   },
   {
     title: "Crie Seus Posts",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lacus mi. In bibendum sagittis urna. Aenean sit amet quam ac sapien bibendum luctus. Suspendisse laoreet urna at metus porta, pellentesque facilisis felis pulvinar. Vivamus vel mauris sed mauris commodo mollis. Nunc in porta mi. Nulla cursus molestie laoreet.",
+    description: `"Crie Seus Posts" is a React app within a microfrontends framework. It lets users craft custom posts with Natura brand images, like social media posts. You can add backgrounds, products, and text, and download or save posts for future editing. It's fully responsive for web and mobile. I led the project, working closely with designer and backend.`,
     mainTechs: [
       "React",
       "Typescript",
@@ -66,12 +66,47 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/crie-seus-posts.png",
     year: 2022,
-    projectInfo: <></>,
+    projectInfo: (
+      <p>
+        {`The web project "Crie Seus Posts" is an application developed with React and is part of a microfrontends framework integrated into a main application. The main function of "Crie Seus Posts" is to enable the creation of customized posts, using a predefined set of images from the `}
+        <a
+          tabIndex={-1}
+          target="_blank"
+          className="underline break-all"
+          href="https://www.natura.com.br/"
+        >
+          Natura
+        </a>
+        {` brand. The creation experience is similar to crafting posts on social networks, allowing for background selection, addition of products/stickers and text, with complete freedom to position and resize as needed.`}
+        <br />
+        <br />
+        {`One notable feature is the ability to download the created post as an image and also save it as a data structure. This enables future edits and reference to the products/stickers present in the image, creating a connection with the actual products of the brand.`}
+        <br />
+        <br />
+        {`Furthermore, the application is fully responsive, adapting seamlessly to both web and mobile devices. During development, I worked as a front-end developer, operating independently but in constant communication with other team members, such as backend professionals and designers.`}
+        <br />
+        <br />
+        {`I took on the responsibility of creating this application from scratch until its successful deployment in production. This journey was filled with challenges, but the final result is a collaborative effort and a dedication to excellence.`}
+        <br />
+        <br />
+        <p className="mt-4 text-xs">
+          {`To view the application, it is necessary to have a consultant account and be logged into the application: `}
+          <a
+            tabIndex={-1}
+            target="_blank"
+            className="underline break-all"
+            href="https://www.natura.com.br/acesso-consultor"
+          >
+            https://www.natura.com.br/acesso-consultor
+          </a>
+        </p>
+      </p>
+    ),
   },
   {
     title: "Predikta - Dashboard(Thermal Manipulation)",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lacus mi. In bibendum sagittis urna. Aenean sit amet quam ac sapien bibendum luctus. Suspendisse laoreet urna at metus porta, pellentesque facilisis felis pulvinar. Vivamus vel mauris sed mauris commodo mollis. Nunc in porta mi. Nulla cursus molestie laoreet.",
+      "Predikta Dashboard: Web app for thermal image manipulation and data visualization. I pioneered its creation, from scratch, as the sole front-end developer. Effective communication with design and backend teams was crucial for its success.",
     mainTechs: [
       "React",
       "Javascript",
@@ -82,7 +117,30 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/thermal-manipulation.png",
     year: 2022,
-    projectInfo: <></>,
+    projectInfo: (
+      <p>
+        {`Predikta Dashboard is an innovative web application that connects to the user screening flow. This powerful tool not only displays images but also the data collected during screenings. Through Dashboards, interactive charts, and lists, users can effectively visualize and analyze this data.`}
+        <br />
+        <br />
+        {`The primary functionality of Predikta Dashboard is the manipulation of thermal images directly on the web. I developed this feature entirely from scratch, facing the challenge of creating something unique without available references on the internet. With this capability, users can apply color palettes to the images, representing the temperature of each pixel. Additionally, it's possible to create temperature ranges and display only the pixels that fall within that range, allowing for detailed analysis and report generation.`}
+        <br />
+        <br />
+        {`As the sole front-end developer on the team, I took on the responsibility of building the application from the ground up and maintaining effective communication with the design and backend team members.`}
+        <br />
+        <br />
+        <p className="mt-4 text-xs">
+          {`You can view the deployed application through this link: `}
+          <a
+            tabIndex={-1}
+            target="_blank"
+            className="underline break-all"
+            href="https://dashboard.predikta.com.br/"
+          >
+            https://dashboard.predikta.com.br/
+          </a>
+        </p>
+      </p>
+    ),
   },
   {
     title: "Predikta Pass",
