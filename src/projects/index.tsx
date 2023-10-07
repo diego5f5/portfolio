@@ -11,8 +11,7 @@ export interface IProject {
 export const projects: IProject[] = [
   {
     title: "Pizza Hut Brasil - App",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lacus mi. In bibendum sagittis urna. Aenean sit amet quam ac sapien bibendum luctus. Suspendisse laoreet urna at metus porta, pellentesque facilisis felis pulvinar. Vivamus vel mauris sed mauris commodo mollis. Nunc in porta mi. Nulla cursus molestie laoreet.",
+    description: `"Pizza Hut Brasil" is a food delivery app for Pizza Hut in Brazil. It includes menu management, order tracking, address capture, and payments. As a mobile frontend developer, I collaborated with the team to build and maintain these features, working closely with designers, backend developers, testers, and product manager.`,
     mainTechs: [
       "React Native",
       "Typescript",
@@ -29,12 +28,55 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/pizza-hut-app.png",
     year: 2023,
-    projectInfo: <></>,
+    projectInfo: (
+      <p>
+        {`With pride, I am part of the team that developed the "Pizza Hut Brasil" project, a React Native mobile application. This app was created specifically for the renowned pizza brand, Pizza Hut, catering to the demands of the Brazilian market.`}
+        <br />
+        <br />
+        {`Throughout the development process, I faced various challenges, such as integrating with external SDKs, including Firebase and Google Maps, as well as implementing tagging services like Firebase Analytics, Salesforce Data Cloud, and Meta analytics.`}
+        <br />
+        <br />
+        {`The application is a comprehensive food delivery solution, offering features such as menu management, real-time order tracking, address capture, and payment flows. As a mobile frontend developer, I had the opportunity to work on all of these functionalities, either building them from scratch or collaborating with other team members.`}
+        <br />
+        <br />
+        {`One of the project's standout features is its commitment to quality. The entire application is covered by unit tests and follows a rigorous manual quality assurance process. I worked closely with other frontend developers, backend developers, designers, testers, PMs, and product people to ensure the application met expectations.`}
+        <br />
+        <br />
+        {`The application's structure is multi-brand and multi-language, which made development even more challenging and stimulating. Additionally, in specific situations, I was responsible for dealing with native code, working with Objective-C and Swift for iOS, as well as Java and Kotlin for Android.`}
+        <br />
+        <br />
+        {`From the project's inception to its deployment and ongoing maintenance, I played a crucial role on the team. In addition to developing features, I actively participated by contributing ideas alongside designers and establishing integration standards with the backend.`}
+        <br />
+        <br />
+        <p className="mt-4 text-xs">
+          {`You can find the app published on the Android and iOS stores: `}
+          <br />
+          <br />
+          <a
+            tabIndex={-1}
+            target="_blank"
+            className="underline break-all line"
+            href="https://play.google.com/store/apps/details?id=com.imc.pizzahut"
+          >
+            Google Play
+          </a>
+          <br />
+          <br />
+          <a
+            tabIndex={-1}
+            target="_blank"
+            className="underline break-all"
+            href="https://apps.apple.com/br/app/pizza-hut-brasil/id1673115073"
+          >
+            App Store
+          </a>
+        </p>
+      </p>
+    ),
   },
   {
     title: "Pizza Hut Brasil - Web",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lacus mi. In bibendum sagittis urna. Aenean sit amet quam ac sapien bibendum luctus. Suspendisse laoreet urna at metus porta, pellentesque facilisis felis pulvinar. Vivamus vel mauris sed mauris commodo mollis. Nunc in porta mi. Nulla cursus molestie laoreet.",
+    description: `The "Pizza Hut Brasil - Web" project is a React-based web app for food delivery. It mirrors the mobile app, including features and business rules, complete with a responsive version for both desktop and mobile. I was responsible for transitioning between the mobile and web applications, developing features in both, and playing a crucial role with expertise in the technologies of both platforms.`,
     mainTechs: [
       "React",
       "Typescript",
@@ -51,7 +93,44 @@ export const projects: IProject[] = [
     ],
     mainImage: "/images/pizza-hut-web.png",
     year: 2023,
-    projectInfo: <></>,
+    projectInfo: (
+      <p>
+        {`In the development of the "Pizza Hut Brazil - Web" project, I had the opportunity to play a crucial role as a frontend developer. This React application is much more than just a website; it's a complete food delivery app.`}
+        <br />
+        <br />
+        {`From the outset, I was involved in all aspects of the project. I worked closely with a multidisciplinary team consisting of frontend developers, backend developers, designers, testers, project managers, and product people. This diversity of talents and perspectives enriched my experience and contributed to the project's success.`}
+        <br />
+        <br />
+        {`One of my primary responsibilities was to ensure a seamless user experience on both the web and mobile versions of the app. I developed features on both platforms and ensured that business rules were consistent.`}
+        <br />
+        <br />
+        {`Furthermore, we integrated various tagging and monitoring tools, such as Google Tag Manager, Hotjar, and Meta Pixel, to gain valuable insights into user behavior and continuously improve the experience.`}
+        <br />
+        <br />
+        {`The application includes menu and store management, real-time order tracking, and payment processing flows. I also led continuous improvement initiatives, proposing ideas and establishing integration standards with the backend.`}
+        <br />
+        <br />
+        {`The project also presented the challenge of dealing with multiple brands and languages, requiring a multi-brand and multi-language framework. My dedication and commitment from the initial setup to deployment were essential to the project's success.`}
+        <br />
+        <br />
+        {`In summary, my journey in the development of the "Pizza Hut Brazil" project was enriching and challenging. I collaborated with a talented team, developed features on various platforms, and contributed to the ongoing evolution of the product.`}
+        <br />
+        <br />
+        <p className="mt-4 text-xs">
+          {`You can visit the application through the link below. To have a complete experience, it is necessary to provide an address that is within the delivery radius of the available stores: `}
+          <br />
+          <br />
+          <a
+            tabIndex={-1}
+            target="_blank"
+            className="underline break-all line"
+            href="https://pizzahut.com.br/"
+          >
+            https://pizzahut.com.br/
+          </a>
+        </p>
+      </p>
+    ),
   },
   {
     title: "Crie Seus Posts",
