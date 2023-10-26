@@ -63,7 +63,7 @@ export const SkillsSection = () => {
         <SectionTitle title="SKILLS" />
 
         <div className="bg-white w-full p-8 rounded-3xl">
-          <p className="text-lg mb-4">Main technologies I use:</p>
+          <p className="text-lg mb-4">Main technologies:</p>
 
           <div className="grid grid-cols-skills gap-12">
             {skills.map((skill, index) => (
